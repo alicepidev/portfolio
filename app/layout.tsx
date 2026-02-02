@@ -1,10 +1,13 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import './globals.css';
+import { Providers } from './providers';
 
-export default function RootLayout({children}: {children: ReactNode}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html suppressHydrationWarning>
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
