@@ -1,0 +1,101 @@
+.duskBaseDark {
+  background: radial-gradient(900px 520px at 50% 40%, rgba(255, 200, 140, 0.12), rgba(0, 0, 0, 0) 60%),
+    radial-gradient(1200px 900px at 30% 20%, rgba(255, 140, 120, 0.08), rgba(0, 0, 0, 0) 60%),
+    radial-gradient(1200px 900px at 70% 80%, rgba(120, 170, 255, 0.08), rgba(0, 0, 0, 0) 65%);
+}
+
+.ripple {
+  transform: scale(1.08);
+  animation: flow 16s linear infinite;
+}
+
+.rippleDark {
+  background: radial-gradient(1200px 800px at 20% 20%, rgba(255, 255, 255, 0.07), transparent 60%),
+    radial-gradient(900px 600px at 80% 30%, rgba(255, 255, 255, 0.05), transparent 55%),
+    radial-gradient(1000px 700px at 60% 80%, rgba(255, 255, 255, 0.06), transparent 60%),
+    repeating-linear-gradient(
+      115deg,
+      rgba(255, 255, 255, 0.035) 0px,
+      rgba(255, 255, 255, 0.02) 18px,
+      rgba(255, 255, 255, 0.01) 42px,
+      rgba(255, 255, 255, 0) 70px
+    );
+  background-size: 140% 140%, 160% 160%, 150% 150%, 220% 220%;
+  background-position: 0% 0%, 100% 0%, 50% 100%, 0% 50%;
+}
+
+.colorWashDark {
+  background: radial-gradient(1200px 900px at 50% 35%, rgba(255, 170, 130, 0.18), rgba(0, 0, 0, 0) 55%),
+    radial-gradient(1200px 1000px at 50% 70%, rgba(70, 110, 220, 0.22), rgba(0, 0, 0, 0) 65%),
+    linear-gradient(to bottom, rgba(20, 40, 90, 0.35), rgba(0, 0, 0, 0.25));
+  mix-blend-mode: screen;
+}
+
+.starsDark {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.85) 1px, transparent 1px),
+    radial-gradient(rgba(255, 255, 255, 0.6) 1px, transparent 1px),
+    radial-gradient(rgba(255, 255, 255, 0.4) 1px, transparent 1px);
+  background-size: 180px 180px, 260px 260px, 340px 340px;
+  background-position: 20px 40px, 120px 160px, 60px 220px;
+  filter: blur(0.2px);
+}
+
+.vignetteDark {
+  background: radial-gradient(1200px 900px at 50% 45%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.28) 55%, rgba(0, 0, 0, 0.62) 100%);
+}
+
+/* ---------- LIGHT ---------- */
+
+.duskBaseLight {
+  background: radial-gradient(900px 520px at 50% 35%, rgba(255, 195, 140, 0.18), rgba(255, 255, 255, 0) 60%),
+    radial-gradient(1200px 900px at 30% 20%, rgba(255, 150, 170, 0.12), rgba(255, 255, 255, 0) 60%),
+    radial-gradient(1200px 900px at 70% 80%, rgba(130, 180, 255, 0.14), rgba(255, 255, 255, 0) 65%),
+    linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(245, 247, 255, 1));
+}
+
+.rippleLight {
+  background: radial-gradient(1200px 800px at 20% 20%, rgba(20, 30, 60, 0.05), transparent 60%),
+    radial-gradient(900px 600px at 80% 30%, rgba(20, 30, 60, 0.035), transparent 55%),
+    radial-gradient(1000px 700px at 60% 80%, rgba(20, 30, 60, 0.045), transparent 60%),
+    repeating-linear-gradient(
+      115deg,
+      rgba(20, 30, 60, 0.04) 0px,
+      rgba(20, 30, 60, 0.02) 18px,
+      rgba(20, 30, 60, 0.01) 42px,
+      rgba(0, 0, 0, 0) 70px
+    );
+  background-size: 140% 140%, 160% 160%, 150% 150%, 220% 220%;
+  background-position: 0% 0%, 100% 0%, 50% 100%, 0% 50%;
+  opacity: 0.8;
+}
+
+.colorWashLight {
+  background: radial-gradient(1200px 900px at 50% 35%, rgba(255, 200, 150, 0.22), rgba(255, 255, 255, 0) 58%),
+    radial-gradient(1200px 1000px at 50% 70%, rgba(110, 150, 255, 0.18), rgba(255, 255, 255, 0) 70%);
+  mix-blend-mode: multiply;
+}
+
+.starsLight {
+  background-image: radial-gradient(rgba(60, 90, 160, 0.18) 1px, transparent 1px),
+    radial-gradient(rgba(60, 90, 160, 0.12) 1px, transparent 1px),
+    radial-gradient(rgba(60, 90, 160, 0.08) 1px, transparent 1px);
+  background-size: 220px 220px, 320px 320px, 420px 420px;
+  background-position: 40px 60px, 180px 210px, 90px 260px;
+  filter: blur(0.2px);
+}
+
+.vignetteLight {
+  background: radial-gradient(1200px 900px at 50% 45%, rgba(255, 255, 255, 0) 0%, rgba(230, 235, 255, 0.35) 55%, rgba(210, 218, 245, 0.7) 100%);
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0% 0%, 100% 0%, 50% 100%, 0% 50%;
+  }
+  50% {
+    background-position: 100% 30%, 0% 40%, 30% 0%, 100% 60%;
+  }
+  100% {
+    background-position: 0% 0%, 100% 0%, 50% 100%, 0% 50%;
+  }
+}

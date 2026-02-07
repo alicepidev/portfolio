@@ -1,7 +1,7 @@
-import type { ReactNode } from 'react';
-import { notFound } from 'next/navigation';
+import type { ReactNode } from "react";
+import { notFound } from "next/navigation";
 
-const LOCALES = ['en', 'fr'] as const;
+const LOCALES = ["en", "fr"] as const;
 type Locale = (typeof LOCALES)[number];
 
 function isLocale(value: string): value is Locale {

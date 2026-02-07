@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* Tailwind v4: make `dark:` follow `.dark` class (next-themes uses <html class="dark">) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+
 html,
 body {
   height: 100%;
