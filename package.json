@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "site:dev": "npm --workspace apps/site run dev",
+    "site:lint": "npm --workspace apps/site run lint",
+    "site:build": "npm --workspace apps/site run build",
+    "site:export": "npm --workspace apps/site run export"
+  }
+}
